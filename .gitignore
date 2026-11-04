@@ -1,0 +1,10 @@
+node_modules/
+dist/
+out/
+android/app/build/
+android/.gradle/
+windows-exe/app/
+web-app/dist/
+.DS_Store
+*.log
+android-apk/release/
