@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Great Vibes'; src: url('fonts/GreatVibes.ttf'); }
+@page { size: A4 landscape; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 297mm; height: 210mm; }
+body {
+  font-family: 'Noto Serif', 'DejaVu Serif', serif;
+  background: #fdfcf6;
+  color: #14264a;
+  position: relative;
+  overflow: hidden;
+}
+/* ---------- watermark ---------- */
+.watermark {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 168mm; height: auto;
+  transform: translate(-50%, -47%);
+  z-index: 0;
+}
+/* ---------- frames ---------- */
+.frame-outer {
+  position: absolute; top: 7mm; left: 7mm; right: 7mm; bottom: 7mm;
+  border: 1.1mm solid #0a1e3f;
+  z-index: 1;
+}
+.frame-inner {
+  position: absolute; top: 9.6mm; left: 9.6mm; right: 9.6mm; bottom: 9.6mm;
+  border: 0.45mm solid #c9a227;
+  z-index: 1;
+}
+.corner { position: absolute; width: 11mm; height: 11mm; z-index: 2; }
+.corner svg { width: 100%; height: 100%; }
+.c-tl { top: 8.2mm; left: 8.2mm; }
+.c-tr { top: 8.2mm; right: 8.2mm; transform: scaleX(-1); }
+.c-bl { bottom: 8.2mm; left: 8.2mm; transform: scaleY(-1); }
+.c-br { bottom: 8.2mm; right: 8.2mm; transform: scale(-1,-1); }
+/* ---------- content ---------- */
+.content {
+  position: relative; z-index: 3;
+  height: 100%;
+  padding: 13mm 18mm 11mm 18mm;
+  text-align: center;
+}
+.logo-wrap {
+  margin: -3mm auto 0 auto;
+  width: 78mm;
+  padding: 1mm 6mm 0 6mm;
+  text-align: center;
+}
+.logo-wrap img {
+  width: 62mm; height: auto; display: block; margin: 0 auto;
+  /* soft navy glow pool behind the transparent logo — fades to the paper, no edges */
+  background: radial-gradient(ellipse 54% 54% at 50% 47%,
+    rgba(7, 23, 51, 0.96) 28%,
+    rgba(7, 23, 51, 0.88) 44%,
+    rgba(7, 23, 51, 0.45) 64%,
+    rgba(7, 23, 51, 0) 76%);
+}
+.brand {
+  margin-top: 3.4mm;
+  font-size: 10.5pt;
+  letter-spacing: 4.5px;
+  color: #8a6d14;
+  text-transform: uppercase;
+}
+h1.title {
+  font-family: 'Noto Serif Display', 'Noto Serif', serif;
+  font-size: 33pt;
+  font-weight: 700;
+  color: #0a1e3f;
+  letter-spacing: 1.5px;
+  margin-top: 1.6mm;
+}
+.rule {
+  width: 62mm; height: 0.55mm;
+  background: #c9a227;
+  margin: 3mm auto 0 auto;
+  position: relative;
+}
+.rule::after {
+  content: '◆';
+  position: absolute; top: -3.1mm; left: 50%;
+  transform: translateX(-50%);
+  color: #c9a227; font-size: 9pt;
+  background: #fdfcf6; padding: 0 2mm;
+}
+.presented {
+  margin-top: 5mm;
+  font-size: 12.5pt;
+  font-style: italic;
+  color: #44557a;
+}
+.student {
+  font-family: 'Noto Serif Display', 'Noto Serif', serif;
+  font-size: 34pt;
+  font-weight: 800;
+  color: #0a1e3f;
+  margin-top: 2.2mm;
+  letter-spacing: 0.5px;
+}
+.name-line {
+  width: 120mm; height: 0.4mm;
+  background: #14264a;
+  margin: 1.8mm auto 0 auto;
+  opacity: 0.55;
+}
+.achievement {
+  margin-top: 4mm;
+  font-size: 13pt;
+  color: #24365e;
+}
+.achievement b { color: #0a1e3f; }
+/* ---------- bottom row ---------- */
+.bottom {
+  position: absolute;
+  left: 18mm; right: 18mm; bottom: 13.5mm;
+  z-index: 3;
+  width: 261mm;
+}
+.details {
+  text-align: center;
+  font-size: 10pt;
+  color: #44557a;
+  letter-spacing: 0.4px;
+  margin-bottom: 5mm;
+}
+.details b { color: #0a1e3f; font-size: 10.5pt; }
+.details .sep { color: #c9a227; padding: 0 3mm; font-size: 11pt; }
+.cols { width: 100%; display: flex; align-items: flex-start; }
+.col-left  { flex: none; width: 62mm; text-align: left; }
+.col-mid   { flex: 1; text-align: center; }
+.col-right { flex: none; width: 62mm; text-align: center; }
+.seal { width: 27mm; height: 27mm; margin-top: 1mm; }
+.sig-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 23pt;
+  color: #0a1e3f;
+  line-height: 1;
+}
+.sig-line {
+  width: 56mm; height: 0.4mm;
+  background: #0a1e3f;
+  margin: 1.6mm auto 1.8mm auto;
+}
+.sig-name { font-size: 10.5pt; font-weight: 700; color: #0a1e3f; }
+.sig-title { font-size: 7.6pt; color: #44557a; margin-top: 0.8mm; line-height: 1.4; }
+.footer {
+  position: absolute;
+  left: 0; right: 0; bottom: 2.3mm;
+  text-align: center;
+  font-size: 7.5pt;
+  letter-spacing: 1.6px;
+  color: #8a6d14;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+
+<img class="watermark" src="wm-light.png" alt="">
+
+<div class="frame-outer"></div>
+<div class="frame-inner"></div>
+<div class="corner c-tl"><svg viewBox="0 0 40 40"><path d="M2 38 L2 12 Q2 2 12 2 L38 2" fill="none" stroke="#c9a227" stroke-width="2.4"/><circle cx="7" cy="7" r="2.6" fill="#0a1e3f"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 40 40"><path d="M2 38 L2 12 Q2 2 12 2 L38 2" fill="none" stroke="#c9a227" stroke-width="2.4"/><circle cx="7" cy="7" r="2.6" fill="#0a1e3f"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 40 40"><path d="M2 38 L2 12 Q2 2 12 2 L38 2" fill="none" stroke="#c9a227" stroke-width="2.4"/><circle cx="7" cy="7" r="2.6" fill="#0a1e3f"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 40 40"><path d="M2 38 L2 12 Q2 2 12 2 L38 2" fill="none" stroke="#c9a227" stroke-width="2.4"/><circle cx="7" cy="7" r="2.6" fill="#0a1e3f"/></svg></div>
+
+<div class="content">
+  <div class="logo-wrap"><img src="logo-mono-transparent.png" alt="Course Ahead logo"></div>
+  <div class="brand">Course Ahead</div>
+  <h1 class="title">Certificate of Achievement</h1>
+  <div class="rule"></div>
+  <div class="presented">This certificate is proudly presented to</div>
+  <div class="student">Ahmed Raza Khan</div>
+  <div class="name-line"></div>
+  <div class="achievement">for successfully completing <b>Networking — CCNA Labs (CCNA 200-301)</b></div>
+</div>
+
+<div class="bottom">
+  <div class="details">
+    Certificate ID <b>CA-2026-0001</b><span class="sep">◆</span>Issue Date <b>23 October 2026</b><span class="sep">◆</span>Valid Until <b>23 October 2028</b>
+  </div>
+  <div class="cols">
+    <div class="col-left"></div>
+    <div class="col-mid">
+      <svg class="seal" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="#0a1e3f"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="50" cy="50" r="30" fill="none" stroke="#c9a227" stroke-width="1"/>
+        <text x="50" y="47" text-anchor="middle" font-family="Noto Serif, serif" font-size="17" font-weight="bold" fill="#c9a227">CA</text>
+        <text x="50" y="63" text-anchor="middle" font-family="Noto Serif, serif" font-size="7.5" letter-spacing="1" fill="#fdfcf6">EST • 2026</text>
+      </svg>
+    </div>
+    <div class="col-right">
+      <div class="sig-script">Raja Huwaris Usmani</div>
+      <div class="sig-line"></div>
+      <div class="sig-name">Raja Huwaris Usmani</div>
+      <div class="sig-title">Founder, Course Ahead<br>Technical Lead, Operations &amp; Customer Support</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© 2026 RAJA HUWARIS USMANI — ALL RIGHTS RESERVED</div>
+
+</body>
+</html>

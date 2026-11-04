@@ -1,0 +1,599 @@
+{
+  "labs": [
+    {
+      "lab": "meet",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 4",
+          "total": 4
+        },
+        {
+          "event": "step-done",
+          "done": 1,
+          "total": 4,
+          "prog": "Step 2 / 4"
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/system identity set name=HeroTik"
+          ],
+          "doneNow": 3
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 4,
+          "prog": "Step 4 / 4"
+        },
+        {
+          "event": "step-done",
+          "done": 4,
+          "total": 4,
+          "prog": "Step 4 / 4"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1159,
+        "scrollTop": 495,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "ether1",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "final": {
+        "done": 4,
+        "total": 4,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "nameip",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "step-done",
+          "done": 1,
+          "total": 3,
+          "prog": "Step 2 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1288,
+        "scrollTop": 624,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "192.168.88.1",
+          "found": true
+        }
+      ],
+      "stars": "★★★",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "dhcp",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/ip dhcp-server print"
+          ],
+          "doneNow": 2
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1282,
+        "scrollTop": 618,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "192.168.88",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "nat",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade"
+          ],
+          "doneNow": 2
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1352,
+        "scrollTop": 688,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "masquerade",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "firewall",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/ip firewall filter add chain=forward dst-address=203.0.113.9 action=drop"
+          ],
+          "doneNow": 3
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1387,
+        "scrollTop": 723,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "203.0.113.9",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "wifi",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/interface wireless security-profiles set default authentication-types=wpa2-psk mode=dynamic-keys wpa2-pre-shared-key=hero12345"
+          ],
+          "doneNow": 2
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1282,
+        "scrollTop": 618,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "HeroWiFi",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "queues",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 3",
+          "total": 3
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/queue simple print"
+          ],
+          "doneNow": 2
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 3,
+          "prog": "Step 3 / 3"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1421,
+        "scrollTop": 757,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "GamesPC",
+          "found": true
+        },
+        {
+          "needle": "5M",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "final": {
+        "done": 3,
+        "total": 3,
+        "doneOpen": true
+      },
+      "winboxMenus": [
+        "📋 Interfaces",
+        "🌐 IP",
+        "📶 Wireless",
+        "🚦 Queues",
+        "⚙️ System",
+        "💾 Set Name"
+      ]
+    },
+    {
+      "lab": "failover",
+      "steps": [
+        {
+          "event": "open",
+          "prog": "Step 1 / 5",
+          "total": 5
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/ip route add dst-address=0.0.0.0/0 gateway=10.0.2.1 distance=2 check-gateway=ping"
+          ],
+          "doneNow": 2
+        },
+        {
+          "event": "step-done",
+          "done": 2,
+          "total": 5,
+          "prog": "Step 3 / 5"
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "ping 8.8.8.8"
+          ],
+          "doneNow": 3
+        },
+        {
+          "event": "step-done",
+          "done": 3,
+          "total": 5,
+          "prog": "Step 4 / 5"
+        },
+        {
+          "event": "cut-isp1",
+          "result": "cut-clicked"
+        },
+        {
+          "event": "manual-fallback",
+          "cmds": [
+            "/ip route print"
+          ],
+          "doneNow": 4
+        },
+        {
+          "event": "step-done",
+          "done": 4,
+          "total": 5,
+          "prog": "Step 5 / 5"
+        },
+        {
+          "event": "repair-isp1",
+          "result": "repair-clicked"
+        },
+        {
+          "event": "step-done",
+          "done": 5,
+          "total": 5,
+          "prog": "Step 5 / 5"
+        }
+      ],
+      "scroll": {
+        "panelCH": 664,
+        "panelSH": 1393,
+        "scrollTop": 729,
+        "formBottom": 657,
+        "panelBottom": 670,
+        "formVisible": true
+      },
+      "winboxOk": [
+        {
+          "needle": "traffic-via-ISP2-after-cut",
+          "found": true
+        },
+        {
+          "needle": "traffic-via-ISP1-after-repair",
+          "found": true
+        }
+      ],
+      "stars": "★☆☆",
+      "error": null,
+      "scanPlayer": {
+        "ru": [],
+        "forbidden": []
+      },
+      "negativeTest": {
+        "doneBefore": 0,
+        "doneAfter": 0,
+        "passed": true,
+        "termTail": "ourse Ahead Simulator) — welcome, hero! Type  help  to see the magic words.\n[admin@MikroTik] > /wrong command\nbad command name /wrong (line 1 column 1)\n(Netro tip: type  help  to see the magic words!)"
+      },
+      "trafficAfterCut": "🌐 Traffic: ISP 2 🟢",
+      "trafficAfterRepair": "🌐 Traffic: ISP 1 🟢",
+      "final": {
+        "done": 5,
+        "total": 5,
+        "doneOpen": true
+      }
+    }
+  ],
+  "scans": [
+    {
+      "view": "home",
+      "ru": [],
+      "forbidden": []
+    },
+    {
+      "view": "mt-list",
+      "ru": [],
+      "forbidden": []
+    }
+  ],
+  "finalList": [
+    "MIKROTIK · 6 min | ★★★ | 👋 Meet MikroTik — The Four Doors |  | A MikroTik router speaks RouterOS. There are F",
+    "MIKROTIK · 6 min | ★★★ | 🏠 A Name & an Address — LAN IP Basics |  | A router with no address is a house with ",
+    "MIKROTIK · 7 min | ★★★ | 🎁 DHCP Server — The Address Giver |  | Typing an address into every phone, TV and PC",
+    "MIKROTIK · 8 min | ★★★ | 🌍 Share the Internet — NAT Masquerade |  | Your home has ONE public address but MANY",
+    "MIKROTIK · 8 min | ★★★ | 🛡️ Firewall Basics — The Guard at the Gate |  | A firewall is a guard who reads rule",
+    "MIKROTIK · 7 min | ★★★ | 📶 WiFi — Name It & Lock It |  | The wlan1 port is your WiFi radio. It needs a name (",
+    "MIKROTIK · 7 min | ★★★ | 🚦 Speed Limits — Simple Queues |  | When one PC downloads a giant game, everyone els",
+    "MIKROTIK · 12 min | ★★★ | ⭐ Dual-WAN Auto-Failover — The Never-Die Internet |  | ⭐ THE STAR MISSION. Two ISPs "
+  ]
+}

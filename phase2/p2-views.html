@@ -1,0 +1,98 @@
+
+<!-- ================= PHASE 2 VIEWS ================= -->
+<section id="view-mt" class="view hidden">
+  <div class="panel">
+    <div class="labbar"><button class="btn ghost" id="mt-back">← Home</button><span class="pill" id="mt-prog"></span></div>
+    <h2 id="mt-title" style="margin:6px 0">📡 MikroTik Labs</h2>
+    <div id="mt-list"></div>
+    <div id="mt-player" class="hidden">
+      <div id="mt-steps"></div>
+      <div class="mt-toolbar" id="mt-stepbtns">
+        <button class="btn" id="mt-typeforme" type="button">⌨️ Type it for me</button>
+        <button class="btn orange" id="mt-hintbtn" type="button">🪄 Hint</button>
+      </div>
+      <div id="mt-hintbox" class="hidden" style="background:#fef9c3;border:2px solid #facc15;border-radius:12px;padding:10px;font-weight:700;margin-bottom:10px"></div>
+      <div id="mt-event"></div>
+      <div id="mt-traffic"></div>
+      <div class="mt-topo-wrap"><svg id="mt-topo" viewBox="0 0 800 460" role="img" aria-label="MikroTik network picture"></svg></div>
+      <p style="font-weight:900;margin:8px 0 4px">🪟 WinBox Panel — <span id="mt-devname">MT1</span></p>
+      <div id="mt-winbox"></div>
+      <div id="mt-term-wrap">
+        <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+          <b style="flex:1">🖥️ RouterOS Console</b>
+          <button class="btn ghost" id="mt-histbtn" type="button" style="min-height:44px">🕘 History</button>
+        </div>
+        <div id="mt-term-out"></div>
+        <div id="mt-histpop" class="hidden"></div>
+        <div class="mt-prompt-line"><span id="mt-prompt">[admin@MikroTik] &gt;</span></div>
+        <form id="mt-term-form" class="mt-form-row">
+          <input id="mt-in" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type a RouterOS command…" />
+          <button class="btn" id="mt-send" type="submit">Send ▶</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="view-exam" class="view hidden">
+  <div class="panel">
+    <div class="labbar"><button class="btn ghost" id="exam-back">← Home</button><span id="exam-timer"></span></div>
+    <div id="exam-card"></div>
+  </div>
+</section>
+
+<section id="view-cert" class="view hidden">
+  <div class="panel">
+    <div class="labbar"><button class="btn ghost" id="cert-back">← Home</button><span class="pill" id="cert-prog"></span></div>
+    <h2 style="margin:6px 0">🎓 My Certificates</h2>
+    <div id="cert-home"></div>
+    <div id="cert-stage" class="hidden">
+      <div id="cert-scale"><div id="cert-doc"></div></div>
+      <div class="p2-rowbtns">
+        <button class="btn orange" id="cert-print" type="button">🖨 Print / Save PDF</button>
+        <button class="btn ghost" id="cert-new" type="button">🎓 My Certificates</button>
+      </div>
+      <div class="panel" id="cert-connect" style="margin-top:14px"></div>
+    </div>
+  </div>
+</section>
+
+<div class="p2modal" id="mt-done">
+  <div class="box">
+    <div style="font-size:3rem">🏆</div>
+    <h3 id="mt-done-title">Lab Complete!</h3>
+    <p id="mt-done-stars" style="font-size:1.6rem"></p>
+    <p id="mt-done-msg" style="font-weight:800"></p>
+    <div class="hero-btns">
+      <button class="btn orange" id="mt-done-card" type="button">📤 Share My Progress</button>
+      <button class="btn" id="mt-done-replay" type="button">↺ Play Again</button>
+      <button class="btn ghost" id="mt-done-home" type="button">📡 All MikroTik Labs</button>
+    </div>
+  </div>
+</div>
+
+<div class="p2modal" id="p2-card-modal">
+  <div class="box">
+    <h3 style="margin-top:0">📤 My Progress Card</h3>
+    <img class="cardimg" id="p2-card-img" alt="My progress card" />
+    <div class="hero-btns">
+      <a class="btn orange" id="p2-card-dl" download="course-ahead-progress.png" style="text-decoration:none;display:flex;align-items:center;justify-content:center">⬇ Download Card</a>
+      <button class="btn ghost" id="p2-card-close" type="button">Close</button>
+    </div>
+    <p style="font-weight:700;color:var(--muted)">Tip: long-press the picture to share it anywhere!</p>
+  </div>
+</div>
+
+<div id="p2-profiles">
+  <div class="sheet">
+    <h2 style="margin:4px 0">👤 Who is learning today?</h2>
+    <p style="font-weight:700;color:var(--muted)">Every hero gets their own XP, labs and streak — pick yours, or make a new one!</p>
+    <div id="p2-prof-list"></div>
+    <h3 style="margin:14px 0 4px">➕ New profile</h3>
+    <form id="p2-prof-add">
+      <input id="p2-prof-name" maxlength="24" placeholder="Hero name…" />
+      <button class="btn orange" type="submit" style="width:100%;min-height:54px">✨ Create Profile</button>
+    </form>
+    <button class="btn ghost" id="p2-prof-close" type="button" style="width:100%;min-height:52px;margin-top:8px">Close</button>
+  </div>
+</div>

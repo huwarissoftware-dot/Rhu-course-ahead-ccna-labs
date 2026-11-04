@@ -1,0 +1,31 @@
+Course Ahead CCNA Labs
+Copyright (C) 2026 Raja Huwaris Usmani. All Rights Reserved.
+
+This software, including all of its code, lessons, lab content, graphics,
+logos, artwork, text and data files, is the exclusive copyrighted property
+of Raja Huwaris Usmani ("the Author").
+
+ALL RIGHTS RESERVED.
+
+No part of this software may be copied, reproduced, modified, adapted,
+reverse-engineered (except where such restriction is prohibited by law),
+rented, sold, sublicensed, uploaded, or redistributed in any form or by
+any means, electronic or otherwise, without the prior written permission
+of the Author.
+
+This application is provided free of charge for personal learning use by
+the person who obtained it from an official Course Ahead channel. Free
+use does not transfer any ownership or copyright. Unauthorised copying or
+redistribution is a violation of copyright law and will be pursued.
+
+The "RHU" logo and the "Course Ahead" name are the Author's marks and may
+not be used without written permission.
+
+Cisco, CCNA and Packet Tracer are trademarks of Cisco Systems, Inc. This
+is an independent educational application and is not affiliated with,
+endorsed by, or sponsored by Cisco Systems, Inc.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+Publisher: Raja Huwaris Usmani - Course Ahead
+Instagram: i.huwaris

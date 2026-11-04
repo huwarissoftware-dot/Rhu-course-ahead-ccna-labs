@@ -1,0 +1,106 @@
+[
+  {
+    "lab": "meet",
+    "status": "DONE",
+    "iters": 4,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1228
+    },
+    "error": null
+  },
+  {
+    "lab": "nameip",
+    "status": "DONE",
+    "iters": 3,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "dhcp",
+    "status": "DONE",
+    "iters": 2,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "nat",
+    "status": "DONE",
+    "iters": 3,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "firewall",
+    "status": "DONE",
+    "iters": 2,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "wifi",
+    "status": "DONE",
+    "iters": 3,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "queues",
+    "status": "DONE",
+    "iters": 3,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": null,
+    "trafficAfterRepair": null,
+    "scroll": {
+      "ch": 664,
+      "sh": 1208
+    },
+    "error": null
+  },
+  {
+    "lab": "failover",
+    "status": "DONE",
+    "iters": 5,
+    "stars": "\u2605\u2606\u2606",
+    "trafficAfterCut": "\ud83c\udf10 Traffic: ISP 2 \ud83d\udfe2",
+    "trafficAfterRepair": "\ud83c\udf10 Traffic: ISP 1 \ud83d\udfe2",
+    "scroll": {
+      "ch": 664,
+      "sh": 1393
+    },
+    "error": null
+  }
+]

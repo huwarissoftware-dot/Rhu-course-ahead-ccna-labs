@@ -1,0 +1,86 @@
+[
+  {
+    "area": "save-resume",
+    "check": "Lab 1 step 1 completes via typeforme",
+    "pass": true,
+    "detail": "step1 done=true"
+  },
+  {
+    "area": "save-resume",
+    "check": "Continue card appears after leaving lab mid-way",
+    "pass": true,
+    "detail": "👋 | Welcome back, hero! | You left Your First Network — Plug & Ping! at Step 2 of 3 — everything is saved, jump right back in! | ▶ Continue Lab"
+  },
+  {
+    "area": "save-resume",
+    "check": "Continue reopens lab at saved step",
+    "pass": true,
+    "detail": "view-lab prog=Configured State: 33%  ·  1 of 3 objectives complete"
+  },
+  {
+    "area": "quiz",
+    "check": "Next Question button advances quiz",
+    "pass": false,
+    "detail": "btns=[\"← All Labs\"] prog  -> "
+  },
+  {
+    "area": "profiles",
+    "check": "Profiles overlay opens (class open)",
+    "pass": true,
+    "detail": "open=true"
+  },
+  {
+    "area": "profiles",
+    "check": "switch to Hero 1 via Learn button",
+    "pass": true,
+    "detail": "switched:🗑 / topbar=👤 Hero 1"
+  },
+  {
+    "area": "certificate",
+    "check": "capstone cert unlocked after seeding",
+    "pass": true,
+    "detail": "seeded capstone / btn:🎓 Get My Certificate"
+  },
+  {
+    "area": "certificate",
+    "check": "claim form fields render",
+    "pass": true,
+    "detail": "true,true,true"
+  },
+  {
+    "area": "certificate",
+    "check": "cert doc: name + ID + 2yr validity, email NOT printed",
+    "pass": true,
+    "detail": "name=true id=true valid2028=true noEmail=true doc=COURSE AHEAD\nCertificate of Achievement\nThis certificate is proudly presented to\nTest Hero\nfor successfully completing Networking — CCNA Labs (CCNA 200-301) · Final Capstone\nCertificate ID CA-2026-000"
+  },
+  {
+    "area": "certificate",
+    "check": "cert signature block intact (approved)",
+    "pass": true,
+    "detail": "sig=true"
+  },
+  {
+    "area": "about",
+    "check": "owner code rejects wrong code with message",
+    "pass": true,
+    "detail": "Hmm, that code is not right. Please check it and try again. 🙂"
+  },
+  {
+    "area": "scroll",
+    "check": "home page scrolls (delayed read)",
+    "pass": true,
+    "detail": "{\"y\":29412,\"docSH\":31235,\"innerH\":740}"
+  },
+  {
+    "area": "scroll",
+    "check": "MT list page scrolls (delayed read)",
+    "pass": true,
+    "detail": "{\"y\":2359,\"docSH\":3099,\"innerH\":740}"
+  },
+  {
+    "area": "scroll",
+    "check": "MT player internal scroll reaches terminal",
+    "pass": true,
+    "detail": "{\"formVisible\":true,\"formBottom\":657,\"panelBottom\":670}"
+  }
+]

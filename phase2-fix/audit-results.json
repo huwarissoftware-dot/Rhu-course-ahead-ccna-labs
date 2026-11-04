@@ -1,0 +1,242 @@
+[
+  {
+    "area": "nav",
+    "check": "bottomnav buttons present",
+    "pass": true,
+    "detail": "home:🏠 Home / labs:🧪 Labs / quiz:🎯 Quiz / about:ℹ️ About / mt:📡 MikroTik"
+  },
+  {
+    "area": "nav",
+    "check": "nav -> labs",
+    "pass": true,
+    "detail": "visible: view-home"
+  },
+  {
+    "area": "nav",
+    "check": "nav -> quiz",
+    "pass": true,
+    "detail": "visible: view-home"
+  },
+  {
+    "area": "nav",
+    "check": "nav -> about",
+    "pass": true,
+    "detail": "visible: view-about"
+  },
+  {
+    "area": "nav",
+    "check": "nav -> mt",
+    "pass": true,
+    "detail": "visible: view-mt"
+  },
+  {
+    "area": "nav",
+    "check": "nav -> home",
+    "pass": true,
+    "detail": "visible: view-home"
+  },
+  {
+    "area": "language",
+    "check": "home English-mode scan",
+    "pass": true,
+    "detail": "RU hits: []"
+  },
+  {
+    "area": "language",
+    "check": "home footer no CubeXS/BBA",
+    "pass": true,
+    "detail": "footer clean"
+  },
+  {
+    "area": "cisco",
+    "check": "Start Lab 1 opens lab view",
+    "pass": true,
+    "detail": "view-lab"
+  },
+  {
+    "area": "cisco",
+    "check": "Lab 1 step renders",
+    "pass": true,
+    "detail": "1\nGive PC1 a home address: 192.168.1.10. Open the PC picture (Desktop tab), click Network, then set the numbers.\n🖥 Device: PC1\n⌨️ Type in Command Prompt — PC1\n"
+  },
+  {
+    "area": "cisco",
+    "check": "Hint button shows hint",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "area": "cisco",
+    "check": "device chip switch",
+    "pass": true,
+    "detail": "switched:💻 PC1 chips: 💻 PC1,🔀 SW1,💻 PC2"
+  },
+  {
+    "area": "cisco",
+    "check": "Lab 1 completes (done modal)",
+    "pass": true,
+    "detail": "done modal open"
+  },
+  {
+    "area": "save-resume",
+    "check": "Continue card on home after Lab 1",
+    "pass": false,
+    "detail": "MISSING"
+  },
+  {
+    "area": "labs-list",
+    "check": "locked lab shows lock message",
+    "pass": true,
+    "detail": "clicked:NETWORK BASICS · 🔒 LOCKED · FREE\nSubnetting Lab — Cutting One Street into Four\n || 🔒\nThis lab is locked\n\nFinish the first 20 labs to open it — it is 100% FREE, we never charge. Just learn step by step!\n\n▶ Go to my next lab\nClose"
+  },
+  {
+    "area": "quiz",
+    "check": "quiz list renders",
+    "pass": true,
+    "detail": "← All Labs / "
+  },
+  {
+    "area": "quiz",
+    "check": "answering shows feedback",
+    "pass": true,
+    "detail": "feedback-visible"
+  },
+  {
+    "area": "quiz",
+    "check": "Next question works",
+    "pass": false,
+    "detail": "NONEXT"
+  },
+  {
+    "area": "sandbox",
+    "check": "Open Sandbox opens view",
+    "pass": true,
+    "detail": "view-lab"
+  },
+  {
+    "area": "sandbox",
+    "check": "add-device tools respond",
+    "pass": true,
+    "detail": "clicked:Router, clicked:Switch, clicked:PC nodes 70->137"
+  },
+  {
+    "area": "sandbox",
+    "check": "cable + delete tools respond",
+    "pass": true,
+    "detail": "cable-clicked / delete-clicked"
+  },
+  {
+    "area": "profiles",
+    "check": "Profiles overlay opens",
+    "pass": false,
+    "detail": "/true/👤 Who is learning today?\n\nEvery hero gets their own XP, labs and streak — pick "
+  },
+  {
+    "area": "profiles",
+    "check": "add profile accepts typing + creates",
+    "pass": true,
+    "detail": "submitted || 👤 Who is learning today?\n\nEvery hero gets their own XP, labs and streak — pick yours, or make a new one!\n\n🦸\nHero 1\n⭐ 105 XP · 1 labs/quizzes done · learning now\n🗑\n🦸\nTester\n⭐ 0 XP · 0 labs/quizzes "
+  },
+  {
+    "area": "profiles",
+    "check": "switch back to Hero 1",
+    "pass": false,
+    "detail": "NOHERO1 / Hero 1 on topbar"
+  },
+  {
+    "area": "language",
+    "check": "Urdu mode shows Roman Urdu",
+    "pass": true,
+    "detail": "toggled-to-ur hits: aur,darwaze,ghar,kabhi,karo,mein,sab,yeh"
+  },
+  {
+    "area": "language",
+    "check": "back to English: zero Roman Urdu",
+    "pass": true,
+    "detail": "toggled-to-en hits: []"
+  },
+  {
+    "area": "settings",
+    "check": "glossary opens",
+    "pass": true,
+    "detail": "clicked:📖 Simple Words / open:✕\n📖 Simple Words — what does it mean?\nIP Address — The home"
+  },
+  {
+    "area": "settings",
+    "check": "Kids/Normal toggle responds",
+    "pass": true,
+    "detail": "normal-clicked on=true / kids-clicked on=true"
+  },
+  {
+    "area": "exam",
+    "check": "Mock Exam intro opens",
+    "pass": true,
+    "detail": "📝 Mock Exam — CCNA 200-301 Practice\n\n30 questions · 45 minutes · pass mark 70%. Questions come from every Quiz Arena mo"
+  },
+  {
+    "area": "exam",
+    "check": "exam starts with question + timer",
+    "pass": true,
+    "detail": "timer=⏱ 45:00 q=Question 1 / 30 · Subnetting Practice — Cutting the Pizza\n\nPC-A is 192.168.1.10/24 and PC-B is 192.1"
+  },
+  {
+    "area": "exam",
+    "check": "exam answer responds",
+    "pass": true,
+    "detail": "answered:Yes / feedback-or-next"
+  },
+  {
+    "area": "certificate",
+    "check": "certificates home renders",
+    "pass": true,
+    "detail": "seeded:undefined labs=0 || 🏆 Finish ALL labs of a colour to earn its certificate — signed by Raja Huwaris Usmani, valid for 2 years. Only your NAME is printed on the certificat"
+  },
+  {
+    "area": "certificate",
+    "check": "claim form opens for completed category",
+    "pass": false,
+    "detail": "NOCLAIM: inputs=0"
+  },
+  {
+    "area": "about",
+    "check": "maker card exact: name + Technical Expert + 6 years + i.huwaris",
+    "pass": true,
+    "detail": "← All Labs\nAbout this app\nRHU Packet Tracer\n\nThis is the Course Ahead CCNA Labs app — free networking labs for everybody.\n\n🧪 55 labs\n🔓 First 20 labs open\n⭐ Rest open free as you learn\n💯 100% free forever\n📴 Works offline\n🧒 Kids Mode\n💙 Why was this app built?\n\nGood networking labs were locked. S"
+  },
+  {
+    "area": "about",
+    "check": "about has NO CubeXS/BBA/graduation/Technical Lead",
+    "pass": true,
+    "detail": "← All Labs\nAbout this app\nRHU Packet Tracer\n\nThis is the Course Ahead CCNA Labs app — free networking labs for everybody.\n\n🧪 55 labs\n🔓 First 20 labs open\n⭐ Rest open free as you learn\n💯 100% free forever\n📴 Works offline\n🧒 Kids Mode\n💙 Why was this app built?\n\nGood networking labs were locked. S"
+  },
+  {
+    "area": "about",
+    "check": "owner code rejects wrong code",
+    "pass": false,
+    "detail": "owner-clicked:🔑 App Owner? Tap here / submitted-wrong-code / no-error-text"
+  },
+  {
+    "area": "winbox",
+    "check": "WinBox menu buttons change panel",
+    "pass": true,
+    "detail": "changed 4/5 menus: 📋 Interfaces / 🌐 IP / 📶 Wireless / 🚦 Queues / ⚙️ System"
+  },
+  {
+    "area": "winbox",
+    "check": "manual console typing works (/interface print)",
+    "pass": true,
+    "detail": "sent || e  help  to see the magic words.\n[admin@MikroTik] > /interface print\n # NAME        TYPE     RUNNING  COMMENT\n 0 ether1      ether    yes     WAN — In"
+  },
+  {
+    "area": "scroll",
+    "check": "home page scrolls (or fits)",
+    "pass": false,
+    "detail": "{\"docSH\":30962,\"innerH\":740,\"scrolled\":false}"
+  },
+  {
+    "area": "scroll",
+    "check": "MT list page scrolls (or fits)",
+    "pass": false,
+    "detail": "{\"docSH\":3301,\"innerH\":740,\"scrolled\":false}"
+  }
+]
